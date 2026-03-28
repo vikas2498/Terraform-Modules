@@ -7,7 +7,7 @@
 
 resource_groups = {
     D03 = {
-        name     = "EA-WE-D-D03"
+        name     = "EA-WE-D--RG-D03"
         location = "West Europe"
         tags = {
             project     = "Platform"
@@ -17,7 +17,7 @@ resource_groups = {
     }
 
     D04 = {
-        name     = "EA-WE-D-D04"
+        name     = "EA-WE-D-RG-D04"
         location = "West Europe"
         tags = {
              project      = "Platform"
