@@ -25,4 +25,45 @@ resource_groups = {
              SID          = "D04"
         }
     }
+
+    D05 = {
+        name     = "EA-WE-D-RG-D05"
+        location = "West Europe"
+        tags = {
+             project      = "Platform"
+             environment  = "Dev"
+             SID          = "D05"
+        }
+    }
+
+    D06 = {
+        name     = "EA-WE-D-RG-D06"
+        location = "West Europe"
+        tags = {
+             project      = "Platform"
+             environment  = "Dev"
+             SID          = "D06"
+        }
+    }
+
+    D07 = {
+        name     = "EA-WE-D-RG-D07"
+        location = "West Europe"
+        tags = {
+             project      = "Platform"
+             environment  = "Dev"
+             SID          = "D07"
+        }
+    }
+
+    net = {
+        name     = "EA-WE-D-RG-Net"
+        location = "West Europe"
+        tags = {
+             project      = "Platform"
+             environment  = "Dev"
+             SID          = "Net"
+        }
+    }
+
 }
