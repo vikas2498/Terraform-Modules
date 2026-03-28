@@ -1,9 +1,22 @@
-# ── Resource Group Configuration ──────────────────────────────────────
-# Only name and location are required per resource group.
-# tags and managed_by are optional — remove them if not needed.
-#
-# To add a resource group : add a new key.
-# To remove a resource group: delete the key and run terraform apply.
+/*
+ * This file defines the resource groups configuration for Terraform.
+ * 
+ * The `resource_groups` variable is a map containing multiple resource group definitions.
+ * Each resource group is identified by a unique key (e.g., D03, D04, net) and includes:
+ * 
+ * - `name`: The name of the resource group.
+ * - `location`: The Azure region where the resource group will be created.
+ * - `tags`: A set of key-value pairs used to tag the resource group for identification and organization.
+ *   - `project`: The project associated with the resource group.
+ *   - `environment`: The environment type (e.g., Dev).
+ *   - `SID`: A unique identifier for the resource group.
+ * 
+ * Example resource groups:
+ * - D03: Represents a development resource group in West Europe with the SID "D03".
+ * - D04: Represents another development resource group in West Europe with the SID "D04".
+ * - net: Represents a network-related resource group in West Europe with the SID "NetWork".
+ */
+
 
 resource_groups = {
     D03 = {
