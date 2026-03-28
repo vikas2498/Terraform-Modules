@@ -1,7 +1,6 @@
 variable "name" {
     description = "Name of the resource group. Must be unique within the Azure subscription."
     type        = string
-  
 }
 
 variable "location" {
@@ -9,7 +8,7 @@ variable "location" {
     type        = string
 }
 
-location "tags" {
+variable "tags" {
     description   = "(optional)tags for resource group"
     type          = map(string)
     default       = {}
